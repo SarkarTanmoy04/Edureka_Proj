@@ -1,0 +1,41 @@
+@font-face {
+    font-family: mycustomisation;
+    src: url(./font/RobotoSlab-SemiBold.ttf);
+}
+.font-style{
+    font-size: 30px;
+    text-shadow: 1px 1px 5px red;
+    text-decoration: sha;
+}
+.font-customisation{
+    font-size: 40px;
+    font-family: mycustomisation;
+}
+.image-styling{
+    width: 250px;
+    height: 200px;
+    border: 5px solid yellow;
+}
+.card-parent{
+    justify-content: center;
+    display: flex;
+}
+.card{
+    padding: 10px;
+    transition-property: transform;
+    transition-duration: 0.5s ;
+}
+.rotate-30:hover{
+    transform:rotate(30deg);
+}
+.rotate-60:hover{
+    transform: rotate(60deg);
+}
+.card2{
+    padding: 10px;
+    transition-property: transform;
+    transition-duration: 1.5s ;
+}
+.rotate-3d:hover{
+    transform: rotate3d(0, 30, 0, 180deg);
+}
