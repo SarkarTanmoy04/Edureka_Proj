@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>
+        Assignment 9
+    </title>
+    <style>
+        .header_style{
+            font-size:large;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .section-style{
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h3 class="header_style"><u>Write a web application which uses Ajax to load data dynamically from external files</u></h1>
+        <div class="body_container">
+            <button style="padding: 10px;">Click Me </button><br>
+            <br>
+        <section id="text_reader" class="section-style"><p>Read the text</p></section>
+    </div>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("#text_reader").load("./tanmoy.txt");
+          });
+        });
+        </script>
+</body>
+</html>
