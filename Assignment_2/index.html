@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>Assignment 2</title>
+</head>
+<body>
+    <h1>USER INFORMATION</h1>
+    <label for="First_Name">First Name</label>
+    &nbsp;<input type="text" name="First_Name"><br><br>
+    <label for="Last_Name">Last Name</label>
+    &nbsp;<input type="text" name="Last_Name"><br><br>
+    <label for="Address">Address</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Address"><br><br>
+    <label for="Email">Email</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="Email"><br><br>
+    <label for="date">Date</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="date"><br><br>
+    <hr>
+    <h3>Audio</h3>
+    <audio controls autoplay>
+        <source src="D:\assigned\edureka\Downloads\meow.wav" type="audio/wav">
+    </audio>
+    <hr>
+    <h3>Video</h3>
+    <video width="320" height="240" controls autoplay loop>
+        <source src="D:\assigned\edureka\Downloads\tom_jerry.mp4" type="video/mp4">
+    </video>
+    <hr>
+    <h3>Circle using Canvas</h3>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <canvas id="myCanvas2" width="200" height="100"></canvas>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+
+        var d = document.getElementById("myCanvas2");
+        var ctx = d.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+    </script> 
+</body>
+</html>
